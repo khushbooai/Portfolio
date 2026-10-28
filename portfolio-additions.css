@@ -1,0 +1,44 @@
+
+/* Additional responsive components for the Khushboo Singh portfolio */
+.facts-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:26px 0 30px}
+.facts-grid>div{border:1px solid var(--line);background:var(--panel);padding:17px 14px;display:flex;flex-direction:column;gap:7px}
+.facts-grid strong{font-size:clamp(20px,2.3vw,29px);letter-spacing:-.05em;color:var(--lime)}
+.facts-grid small{font-size:10px;line-height:1.5;color:var(--muted)}
+.research-visual{padding:28px 30px;display:flex;flex-direction:column;justify-content:space-between;min-height:370px}
+.research-stat{display:flex;align-items:baseline;gap:14px;margin:22px 0 10px}
+.research-stat strong{font-size:clamp(60px,8vw,94px);line-height:1;letter-spacing:-.08em;color:var(--lime)}
+.research-stat span{font:10px var(--mono);letter-spacing:.1em;color:var(--muted);max-width:90px}
+.research-bars{display:grid;gap:15px;margin:10px 0 24px}
+.research-bars>div{display:grid;grid-template-columns:145px 1fr;gap:14px;align-items:center;font:10px var(--mono);color:#c6c7be}
+.research-bars i{display:block;height:6px;background:#30312c;position:relative;overflow:hidden}
+.research-bars i:after{content:"";display:block;width:var(--bar);height:100%;background:var(--lime)}
+.project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:18px}
+.mini-project{border:1px solid var(--line);background:var(--panel);padding:25px;display:flex;flex-direction:column;min-height:330px}
+.mini-project-top{display:flex;justify-content:space-between;font:10px var(--mono);letter-spacing:.07em;color:var(--muted)}
+.mini-project-icon{font-size:36px;color:var(--lime);margin:28px 0 18px}
+.mini-project h3{font-size:23px;letter-spacing:-.04em;margin:14px 0 9px}
+.mini-project p{color:#b6b7af;font-size:13px;line-height:1.8;margin:0 0 22px}
+.mini-status{border-top:1px solid var(--line);padding-top:14px;margin-top:auto;color:var(--muted);font:10px var(--mono);line-height:1.7}
+.mini-status a{color:var(--lime);text-decoration:underline;text-underline-offset:3px}
+.experience-section,.awards-section{padding-top:75px;padding-bottom:75px}
+.timeline{margin-top:32px;border-top:1px solid var(--line)}
+.timeline-item{display:grid;grid-template-columns:220px 1fr;gap:32px;padding:27px 0;border-bottom:1px solid var(--line)}
+.timeline-date{font:10px var(--mono);letter-spacing:.04em;color:var(--muted);padding-top:6px}
+.timeline-date span{color:var(--lime);margin-left:6px}
+.timeline-content h3{font-size:20px;letter-spacing:-.03em;margin:0 0 5px}
+.timeline-place{font-size:12px!important;color:var(--lime)!important;margin:0 0 10px!important}
+.timeline-content p{max-width:760px;color:#b6b7af;font-size:13px;line-height:1.8;margin:0}
+.award-row{display:grid;grid-template-columns:40px 1fr;gap:15px;padding:22px 0;border-bottom:1px solid var(--line)}
+.award-symbol{color:var(--lime);font-size:24px}
+.award-row h3{margin:0 0 6px;font-size:17px;letter-spacing:-.02em}
+.award-row p{margin:0;color:#b6b7af;font-size:13px;line-height:1.7}
+.contact-location{font-size:11px!important;color:var(--muted)!important;line-height:1.7;margin-top:20px!important}
+@media(max-width:760px){
+ .facts-grid{grid-template-columns:1fr;gap:8px}
+ .facts-grid>div{padding:13px}
+ .project-grid{grid-template-columns:1fr}
+ .timeline-item{grid-template-columns:1fr;gap:9px;padding:22px 0}
+ .research-visual{min-height:330px;padding:22px}
+ .research-bars>div{grid-template-columns:120px 1fr}
+ .mini-project{min-height:unset}
+}
